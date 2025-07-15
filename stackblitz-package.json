@@ -9,10 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@zignal/core": "^1.0.0",
-    "@zignal/persist": "^1.0.0",
-    "@zignal/sync": "^1.0.0",
-    "@zignal/paramagic": "^1.0.0",
+    "@zignal/core": "^0.1.0",
+    "@zignal/persist": "^0.0.1",
+    "@zignal/sync": "^0.0.2",
+    "@zignal/paramagic": "^0.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.3"
