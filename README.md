@@ -1,46 +1,73 @@
-# Getting Started with Create React App
+# Zignal Counter Examples
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Interactive examples showcasing Zignal's reactive state management capabilities.
 
-## Available Scripts
+## 🚀 Quick Start
 
-In the project directory, you can run:
+### Local Development
+```bash
+npm install
+npm run dev
+```
 
-### `npm start`
+### StackBlitz Deployment
+1. **Option 1: Direct Upload**
+   - Zip the entire `counter-app` folder
+   - Go to [StackBlitz](https://stackblitz.com)
+   - Click "Import project" and upload the zip
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. **Option 2: GitHub Integration**
+   - Push this code to a GitHub repository
+   - Go to `https://stackblitz.com/github/YOUR_USERNAME/YOUR_REPO/tree/main/counter-app`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. **Option 3: One-Click Deploy**
+   - Use the StackBlitz URL: `https://stackblitz.com/fork/github/YOUR_USERNAME/YOUR_REPO/tree/main/counter-app`
 
-### `npm test`
+## 📱 Examples Included
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔢 Simple Counter
+Basic counter implementation using Zignal's core functionality.
 
-### `npm run build`
+### 💾 Persistent Counter
+- Counter that saves state to localStorage or sessionStorage
+- Toggle between storage types to see the difference
+- Demonstrates persistence across page reloads
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔄 Cross-tab Sync Counter
+- Counter synchronized across browser tabs and windows
+- Uses BroadcastChannel API for real-time sync
+- Open multiple tabs to see it in action
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🔗 URL Synced Counter
+- Multi-key counter that syncs with URL query parameters
+- Two variants: with and without initial values in URL
+- Demonstrates URL state management
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠 Technology Stack
 
-### `npm run eject`
+- **React 19** - UI framework
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **React Router** - Client-side routing
+- **Zignal** - Reactive state management (from npm)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 📦 Zignal Features Demonstrated
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `createZignal()` - Core reactive state
+- `write()` - Persistent state with localStorage/sessionStorage
+- `broadcast()` - Cross-tab synchronization
+- `buildQueryString()` - URL state synchronization
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🌐 Live Demo
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Once deployed to StackBlitz, you can:
+- Share the live URL with others
+- Embed examples in documentation
+- Fork and modify for your own projects
+- Test cross-tab sync by opening multiple browser tabs
 
-## Learn More
+## 📝 Notes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Uses published Zignal packages from npm for easy deployment
+- All Zignal packages are automatically installed from the registry
+- Ready for StackBlitz, CodeSandbox, or any online IDE
